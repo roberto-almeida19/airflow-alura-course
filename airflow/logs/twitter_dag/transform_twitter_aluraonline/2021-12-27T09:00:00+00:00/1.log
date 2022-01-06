@@ -1,0 +1,15 @@
+[2021-12-31 12:39:53,039] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.transform_twitter_aluraonline 2021-12-27T09:00:00+00:00 [queued]>
+[2021-12-31 12:39:53,049] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: twitter_dag.transform_twitter_aluraonline 2021-12-27T09:00:00+00:00 [queued]>
+[2021-12-31 12:39:53,049] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-31 12:39:53,049] {taskinstance.py:881} INFO - Starting attempt 1 of 1
+[2021-12-31 12:39:53,049] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-31 12:39:53,058] {taskinstance.py:901} INFO - Executing <Task(SparkSubmitOperator): transform_twitter_aluraonline> on 2021-12-27T09:00:00+00:00
+[2021-12-31 12:39:53,063] {standard_task_runner.py:54} INFO - Started process 15642 to run task
+[2021-12-31 12:39:53,128] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'twitter_dag', 'transform_twitter_aluraonline', '2021-12-27T09:00:00+00:00', '--job_id', '39', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/twitter_dag.py', '--cfg_path', '/var/folders/yv/xtbkkbn565j6hhnrh5chcn4r0000gn/T/tmpdfgtheju']
+[2021-12-31 12:39:53,130] {standard_task_runner.py:78} INFO - Job 39: Subtask transform_twitter_aluraonline
+[2021-12-31 13:48:17,077] {local_task_job.py:113} ERROR - Heartbeat time limited exceeded!
+[2021-12-31 13:48:17,072] {logging_mixin.py:112} INFO - Running <TaskInstance: twitter_dag.transform_twitter_aluraonline 2021-12-27T09:00:00+00:00 [running]> on host MacBook-Pro-de-Roberto.local
+[2021-12-31 13:48:17,150] {helpers.py:325} INFO - Sending Signals.SIGTERM to GPID 15642
+[2021-12-31 13:48:17,156] {helpers.py:291} INFO - Process psutil.Process(pid=15642, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='12:39:53') (15642) terminated with exit code Negsignal.SIGTERM
